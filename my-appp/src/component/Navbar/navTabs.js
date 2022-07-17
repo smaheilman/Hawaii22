@@ -5,7 +5,7 @@ function Nav(props) {
             <nav className='container-fluid'>
             <ul className="navs nav-tab row">
                 {tabs.map(tab => (
-                    <li className="nav-item col mx-5" key={tab}>
+                    <li className=" col mx-5" key={tab}>
                         <a
                             href={'#' + tab.toLowerCase()}
                             // Whenever a tab is clicked on,

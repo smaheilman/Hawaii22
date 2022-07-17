@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import dateimg from "../../assets/images/summer-vacation.png"
 
 
 const Countdown = () => {
@@ -37,13 +38,17 @@ const Countdown = () => {
             {isLoading ? (<h1>Loading...</h1>) : (
             <section className='container'>
             <div className='countdown'>
-                <article>
-                    <h3>Days</h3>
-                    <p>{days}</p>
+                <h2 className='cdHead'>
+                    <img src={dateimg} alt="calendar" className="dateImg"/>
+                    Countdown
+                </h2>
+                <article className='days'>
+                    <h3 className='cdText'>Days</h3>
+                    <p className='cdText'>{days}</p>
                 </article>
-                <article>
-                    <h3>hours</h3>
-                    <p>{hours}</p>
+                <article className='hours'>
+                    <h3 className='cdText'>Hours</h3>
+                    <p className='cdText'>{hours}</p>
                 </article>
             </div>
             </section>)}
